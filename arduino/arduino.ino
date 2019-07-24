@@ -45,7 +45,7 @@ void triggerDual(int portCam, int portLED, int portLED2){
   analogWrite(portLED2, 0);
   // Grace period. Potentially unnecessary.
   // Tiny bit less than the configured flash time, because the function calls also have overhead.
-  accurateDelayMicroseconds(1.95 * 1000.0);
+  accurateDelayMicroseconds(1.99 * 1000.0);
 }
 
 // the loop function runs over and over again forever
