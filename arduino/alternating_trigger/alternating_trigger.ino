@@ -62,10 +62,9 @@ void loop() {
     //flash camera A and wait half a frame
     triggerDual(CamPinA,LEDPinA1,LEDPinA2); 
     digitalWrite(13, LOW);
+    
     accurateDelayMicroseconds(halfFlash);
     triggerDual(CamPinB,LEDPinB1,LEDPinB2); 
     accurateDelayMicroseconds(halfFlash);
   }
 }
-
-
