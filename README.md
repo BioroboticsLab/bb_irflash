@@ -15,6 +15,8 @@ The hardware is designed to be triggered via signal current and powered with 12V
 
 The board dimensions are 23mmx51mm, single sided layout. Parts as described in the 'Parts' section enable flashing at 3 Hz and 20 ms duration. Designs come in EAGLE format.
 
+V2: this board have a protecting circuit limiting the impulse to 20ms the file are design with KiCAD. Each Board cost around 150 and 200€ depending on the manufacturer.
+
 ## Parts
 The SMD parts required for the boards are the following.
 
