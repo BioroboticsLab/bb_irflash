@@ -16,14 +16,12 @@ The hardware is designed to be triggered via signal current and powered with 12V
 The board dimensions are 23mmx51mm, single sided layout. Parts as described in the 'Parts' section enable flashing at 3 Hz and 20 ms duration. Designs come in EAGLE format.
 
 ##Board V2.0
-![BoardV2](/board_V2/pix.jpg)
-Format: ![Alt Text](url)
+
+![Alt text](board_V2/pix.jpg?raw=true "BoardV2")
+
 The new IR flash board have the exact same performance as the previous version. The only new part is a better connectivity and a protection circuit.
 The protection circuit is limiting the impulse duration to 20ms with a pause of 100ms between each pulse for protecting the LED. The power supply should be 
 V ; 6A. To use it just send a step signal of the wanted duration to the trigger pin of the board (The step signal should not be wider than 20ms high and a pause of 100ms should be observe between each pulse)
-
-
-To use it 
 
 The files in "board_V2" folder are all the project file in KiCAD format. If you have no interest in redesign, they are not interesting for you. 
 
