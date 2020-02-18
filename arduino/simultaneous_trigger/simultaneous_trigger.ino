@@ -58,7 +58,7 @@ void loop()
 {  
 
   //number of ms defined by the framerate minus the combined waiting times after LED and cam trigger, respectively (in ms)
-  const float WAIT_UNTIL_NEXT_FRAME_MS = 1000.0 / TARGET_FPS - (LED_LATENCY_US + CAM_LATENCY_US);
+  const float WAIT_UNTIL_NEXT_FRAME_US = 1000000.0 / TARGET_FPS - (LED_LATENCY_US + CAM_LATENCY_US);
 
   // debug LED on 
   digitalWrite(13, HIGH);
@@ -70,7 +70,7 @@ void loop()
     triggerSimultaneous();
 
     // wait remaining time
-    accurateDelayMicroseconds( WAIT_UNTIL_NEXT_FRAME_MS * 1000);
+    accurateDelayMicroseconds( WAIT_UNTIL_NEXT_FRAME_US );
   }
 
   // debug LED off 
