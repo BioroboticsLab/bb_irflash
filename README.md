@@ -17,7 +17,7 @@ The board dimensions are 23mmx51mm, single sided layout. Parts as described in t
 
 ##Board V2.0
 
-![Alt text](board_V2/pix.jpg?raw=true "BoardV2")
+![Alt text](board_V2/pix.JPG?raw=true "BoardV2")
 
 The new IR flash board have the exact same performance as the previous version. The only new part is a better connectivity and a protection circuit.
 The protection circuit is limiting the impulse duration to 20ms with a pause of 100ms between each pulse for protecting the LED. The power supply should be 
