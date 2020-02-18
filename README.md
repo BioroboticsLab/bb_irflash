@@ -32,7 +32,8 @@ The SMD parts required for the boards are the following.
 
 4x [2.2mF Capacitor 'JMK107BJ225KA-T'](http://www.digikey.com/product-detail/en/taiyo-yuden/JMK107BJ225KA-T/587-1254-1-ND/931031) 
 
-#Board V2.0
+
+# Board V2.0
 
 ![Alt text](board_V2/pix.JPG?raw=true "BoardV2")
 
