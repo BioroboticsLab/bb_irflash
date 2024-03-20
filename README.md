@@ -18,19 +18,57 @@ The board dimensions are 23mmx51mm, single sided layout. Parts as described in t
 ## Parts
 The SMD parts required for the boards are the following.
 
-2x [MOSFET 'AO4752'](http://www.digikey.com/product-detail/en/alpha-omega-semiconductor-inc/AO4752/785-1597-1-ND/3712546)
+Here's the updated README in Markdown format with the new component IDs and links updated to the Mouser website (with ".de" domain):
 
-2x [LED OSRAM 'SFH-4716S'](http://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/SFH-4716S/475-3045-1-ND/4360722)
+---
 
-1x [Signal Amplifier 'LM358DT'](http://www.digikey.com/product-detail/en/stmicroelectronics/LM358DT/497-1591-1-ND/592083) 
+## SMD Parts Required for the Boards
 
-8x [2.2Ohm Resistor 'CRM2512-JW-2R2ELF'](http://www.digikey.com/product-detail/en/bourns-inc/CRM2512-JW-2R2ELF/CRM2512-JW-2R2ELFCT-ND/3592989) 
+The following Surface-Mount Device (SMD) parts are required for the boards:
 
-3x [10kOhm Resistor 'RC0603JR-0710KL'](http://www.digikey.com/product-detail/en/yageo/RC0603JR-0710KL/311-10KGRCT-ND/729647) 
+### MOSFETs
+- 8x [NTMS4807NR2G 'AO4752'](https://www.mouser.de/ProductDetail/863-NTMS4807NR2G)
 
-1x [120Ohm Resistor 'RC0603JR-07120RL'](http://www.digikey.com/product-detail/en/yageo/RC0603JR-07120RL/311-120GRCT-ND/729653) 
+### LEDs
+- 8x [LED OSRAM 'SFH 4716AS A01'](https://www.mouser.de/ProductDetail/ams-OSRAM/SFH-4716AS-A01?qs=%252BEew9%252B0nqrDXvNyoSKrong%3D%3D)
 
-4x [2.2mF Capacitor 'JMK107BJ225KA-T'](http://www.digikey.com/product-detail/en/taiyo-yuden/JMK107BJ225KA-T/587-1254-1-ND/931031) 
+### Signal Amplifiers
+- 4x [Signal Amplifier 'LMV358'](https://www.mouser.de/ProductDetail/Texas-Instruments/LMV358LVIDR?qs=qSfuJ%252Bfl%2Fd53U%2FPkf9lZVw%3D%3D)
+
+### Resistors
+- 32x [2 Ohm Resistor '603-RC2512JK-072RL'](https://www.mouser.de/ProductDetail/603-RC2512JK-072RL)
+- 16x [10k Ohm Resistor '71-CRCW060310K0JNEAC'](https://www.mouser.de/ProductDetail/71-CRCW060310K0JNEAC)
+- 2x [4.7k Ohm Resistor '71-CRCW06034K70JNEAC'](https://www.mouser.de/ProductDetail/71-CRCW06034K70JNEAC)
+- 4x [22k Ohm Resistor '71-CRCW060322K0JNEAC'](https://www.mouser.de/ProductDetail/71-CRCW060322K0JNEAC)
+- 1x [20k Ohm Resistor 'R0603'](Beta Layout standard part)
+- 1x [100k Ohm Resistor '71-CRCW0603100KFKEAC'](https://www.mouser.de/ProductDetail/71-CRCW0603100KFKEAC)
+
+### Capacitors
+- 4x [0.01uF Capacitor '810-C1005X7R1H103KBE'](https://www.mouser.de/ProductDetail/810-C1005X7R1H103KBE)
+- 2x [1uF Capacitor '81-GRM155R61C105MA2D'](https://www.mouser.de/ProductDetail/81-GRM155R61C105MA2D)
+
+### Diodes
+- 2x [Schottky Diode 'CDBU0230R-HF'](https://www.mouser.de/ProductDetail/750-CDBU0230R-HF)
+
+### Transistors
+- 2x [NPN Transistor 'NSVMMBT2222AM3T5G'](https://www.mouser.de/ProductDetail/863-NSVMMBT2222AM3T5)
+
+### Timer
+- 2x [Timer 'NE555DR'](https://www.mouser.de/ProductDetail/595-NE555DR)
+
+### Logic Gates
+- 1x [Dual AND Gate '74LVC2G08'](https://www.mouser.de/ProductDetail/771-74LVC2G08DP-G)
+
+## Other required components - to solder on
+
+### Capacitors
+- 8x [2mF Capacitor '667-EEU-FP1E202B'](https://www.mouser.de/ProductDetail/667-EEU-FP1E202B)
+
+### MOSFET
+- 1x [RFD14N05L 'RFD14N05L'](https://www.mouser.de/ProductDetail/512-RFD14N05L)
+
+### Connectors
+- See order_examples for part numbers, and reference the picture for needed parts
 
 
 # Board V2.0
@@ -43,9 +81,11 @@ V ; 6A. To use it just send a step signal of the wanted duration to the trigger 
 
 The files in "board_V2" folder are all the project file in KiCAD format. If you have no interest in redesign, they are not interesting for you. 
 
-The only interesting files for fabrication are in fabrication folder. 
-If you want to assemble the board by yourself, the only interesting files the gerber files contained in "fabrication/gerber" the gerber files are the map of your circuits.
-You manufacturer would ask for them. Another folder : "fabrication/gerber/drill_file" contain the coordinate of all the holes drilled into the board.
+For fabrication you only need the files in the fabrication folder.
+The gerber files contained in "fabrication/gerber" are the map of your circuits - You manufacturer would ask for them (likely as a zip file, i.e. gerber.zip containing all folder contents).  The subfolder : "fabrication/gerber/drill_file" contain the coordinate of all the holes drilled into the board.
 
-If you want to ask a third party for assembly, you will need the gerber files, the components position and components list. The component list is contain in BOM folder. 
-The components position files are in component_position folder (Bottom and top layer). The BOM format can vary in function of your third party company. Please ask them.
+If you want to ask a third party for assembly, you will need the gerber files, the components position files ("Bestückungsplan": assembly_map_top.pdf
+and assembly_map_bottom.pdf), the Pick&Place placement file (Pick&Place.txt), and the components list (Bill of Materials: BOM.xlsx). The 
+The components position files are in component_position folder (Bottom and top layer). Note that the BOM format can vary in function of your third party company.
+
+The folder order_examples contains two examples for orders placed through Beta Layout with components ordered through Mouser.  These are for reference.

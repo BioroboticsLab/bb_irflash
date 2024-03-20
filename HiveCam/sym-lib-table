@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name ao4752)(type Legacy)(uri ${KIPRJMOD}/ao4752.lib)(options "")(descr ""))
-  (lib (name HiveCam-rescue)(type Legacy)(uri ${KIPRJMOD}/HiveCam-rescue.lib)(options "")(descr ""))
-)
