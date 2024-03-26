@@ -15,10 +15,7 @@ The hardware is designed to be triggered via signal current and powered with 12V
 
 The board dimensions are 23mmx51mm, single sided layout. Parts as described in the 'Parts' section enable flashing at 3 Hz and 20 ms duration. Designs come in EAGLE format.
 
-## Parts
-The SMD parts required for the boards are the following.
-
----
+# Parts
 
 ## SMD Parts Required for the Boards
 
