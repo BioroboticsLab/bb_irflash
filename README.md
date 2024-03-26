@@ -18,8 +18,6 @@ The board dimensions are 23mmx51mm, single sided layout. Parts as described in t
 ## Parts
 The SMD parts required for the boards are the following.
 
-Here's the updated README in Markdown format with the new component IDs and links updated to the Mouser website (with ".de" domain):
-
 ---
 
 ## SMD Parts Required for the Boards
