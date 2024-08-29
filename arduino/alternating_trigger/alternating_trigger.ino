@@ -10,7 +10,7 @@
 //Flashing time is flash+camFlashOffset+Trigertime
 //Workflow: Flash on -> wait the offset -> trigger cam -> wait triggertime
 //          -> untrigger cam -> wait flash -> Flash off 
-#define flash             (5.5)
+#define flash             5.0
 #define second            1000.0
 
 // Needs to be compile-time constant.
@@ -38,14 +38,15 @@ void triggerDual(int portCam, int portLED, int portLED2){
   // Trigger flashes. The camera might need a few micros, but the flashes also need to bright up.
   analogWrite(portLED,255);  
   analogWrite(portLED2,255);
-  accurateDelayMicroseconds(3.5 * 1000.0);
+  // Flash time.  Tiny bit less than the configured flash time, because the function calls also have overhead.
+  accurateDelayMicroseconds((flash-0.01) * 1000.0);
   // Reset the signals.
   analogWrite(portCam, 0);
   analogWrite(portLED, 0);
   analogWrite(portLED2, 0);
   // Grace period. Potentially unnecessary.
   // Tiny bit less than the configured flash time, because the function calls also have overhead.
-  accurateDelayMicroseconds(1.99 * 1000.0);
+  // accurateDelayMicroseconds(1.99 * 1000.0);
 }
 
 // the loop function runs over and over again forever
