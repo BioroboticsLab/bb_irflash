@@ -28,14 +28,15 @@ The following Surface-Mount Device (SMD) parts are required for the boards:
 - 8x [LED OSRAM 'SFH 4716AS A01'](https://www.mouser.de/ProductDetail/ams-OSRAM/SFH-4716AS-A01?qs=%252BEew9%252B0nqrDXvNyoSKrong%3D%3D)
 
 ### Signal Amplifiers
-- 4x [Signal Amplifier 'LMV358'](https://www.mouser.de/ProductDetail/Texas-Instruments/LMV358LVIDR?qs=qSfuJ%252Bfl%2Fd53U%2FPkf9lZVw%3D%3D)
+- 4x [Signal Amplifier 'LM358LVIDR'](https://www.mouser.de/ProductDetail/595-LM358LVIDR)
 
 ### Resistors
 - 32x [2 Ohm Resistor '603-RC2512JK-072RL'](https://www.mouser.de/ProductDetail/603-RC2512JK-072RL)
 - 16x [10k Ohm Resistor '71-CRCW060310K0JNEAC'](https://www.mouser.de/ProductDetail/71-CRCW060310K0JNEAC)
 - 2x [4.7k Ohm Resistor '71-CRCW06034K70JNEAC'](https://www.mouser.de/ProductDetail/71-CRCW06034K70JNEAC)
 - 4x [22k Ohm Resistor '71-CRCW060322K0JNEAC'](https://www.mouser.de/ProductDetail/71-CRCW060322K0JNEAC)
-- 1x [20k Ohm Resistor 'R0603'](Beta Layout standard part)
+- 1x [20k Ohm Resistor 'R0603'](Beta Layout standard part) [20k Resistor on Mouser '71-CRCW060320K0JNEA'](https://www.mouser.de/ProductDetail/71-CRCW060320K0JNEAC)
+)
 - 1x [100k Ohm Resistor '71-CRCW0603100KFKEAC'](https://www.mouser.de/ProductDetail/71-CRCW0603100KFKEAC)
 
 ### Capacitors
@@ -54,7 +55,7 @@ The following Surface-Mount Device (SMD) parts are required for the boards:
 ### Logic Gates
 - 1x [Dual AND Gate '74LVC2G08'](https://www.mouser.de/ProductDetail/771-74LVC2G08DP-G)
 
-## Other required components - to solder on
+## Through-hole-technology (THT) required components to solder on
 
 ### Capacitors
 - 8x [2mF Capacitor '667-EEU-FP1E202B'](https://www.mouser.de/ProductDetail/667-EEU-FP1E202B)
@@ -63,7 +64,18 @@ The following Surface-Mount Device (SMD) parts are required for the boards:
 - 1x [RFD14N05L 'RFD14N05L'](https://www.mouser.de/ProductDetail/512-RFD14N05L)
 
 ### Connectors
-- See order_examples for part numbers, and reference the picture for needed parts
+- 8x [Header - Board to LED connections](https://www.mouser.de/ProductDetail/538-43045-0400)
+- 1x [Header - Arduino connection](https://www.mouser.de/ProductDetail/538-105313-1203).  Note that the picture shows the incorrect part with number 1103.  The right angle connection
+- 1x [Header - Power supply connection](https://www.mouser.de/ProductDetail/538-76825-0002)
+
+See order_examples for further detail, and reference the picture for needed parts.  
+
+# Mouser project order templates for parts:
+- [bb_irflash SMD components Mouser project to order](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=517e59b65d)
+- [bb_irflash SMD components spreadsheet list]('order_examples/BB_IRFLASH_SMD_COMPONENTS.xls')
+- [bb_irflash THT components Mouser project to order](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0B309C354D)
+- [bb_irflash THT components spreadsheet list]('order_examples/BB_IRFLASH_THT_COMPONENTS.xls')
+
 
 
 # Board V2.0
