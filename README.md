@@ -72,9 +72,9 @@ See order_examples for further detail, and reference the picture for needed part
 
 # Mouser project order templates for parts:
 - [bb_irflash SMD components Mouser project to order](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=517e59b65d)
-- [bb_irflash SMD components spreadsheet list]('order_examples/BB_IRFLASH_SMD_COMPONENTS.xls')
+- [bb_irflash SMD components spreadsheet list](order_examples/BB_IRFLASH_SMD_COMPONENTS.xls)
 - [bb_irflash THT components Mouser project to order](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0B309C354D)
-- [bb_irflash THT components spreadsheet list]('order_examples/BB_IRFLASH_THT_COMPONENTS.xls')
+- [bb_irflash THT components spreadsheet list](order_examples/BB_IRFLASH_THT_COMPONENTS.xls)
 
 
 
