@@ -75,7 +75,12 @@ See order_examples for further detail, and reference the picture for needed part
 - [bb_irflash SMD components spreadsheet list](order_examples/BB_IRFLASH_SMD_COMPONENTS.xls)
 - [bb_irflash THT components Mouser project to order](https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0B309C354D)
 - [bb_irflash THT components spreadsheet list](order_examples/BB_IRFLASH_THT_COMPONENTS.xls)
+- [Cables for connecting lights, Arduino, and power supply](https://www.mouser.de/ProjectManager/ProjectDetail.aspx?AccessID=e691302b18). Note that the Arduino connection cable (Nanofit) and the power supply cable (Megafit) connect to the board, but will have to be cut/adjusted to make appropriate connections to the Arduino/power supply
 
+# Power supply
+The board is typically driven at 5V.  However, higher light output can be achieved by driving at slightly higher voltages.  here are suitable power supply for these voltages.  Note that when operating at 6fps and 5msec flashes, one board will draw 1-1.5 amps maximum.  Therefore one of these power supplies is sufficient to drive multiple boards.
+- [5V power supply (adjustable in range 4.75-5.8V)](https://www.mouser.de/ProductDetail/MEAN-WELL/HRP-100-5?qs=Pc4kzEvJlcQLHIPhYtoJzw%3D%3D)
+- [7.5V power supply (adjustable in range 6-9V)](https://www.mouser.de/ProductDetail/MEAN-WELL/RSP-320-7.5?qs=Uzd%2Fwh%252BZzhAvdwoq1II01Q%3D%3D).  Also available at [Conrad](https://www.conrad.de/de/p/mean-well-rsp-320-7-5-schaltnetzteil-7-5-v-dc-40-a-300-w-2249344.html?utm_source=google&utm_medium=cpc&utm_campaign=GB1_Messtechnik+%26+Stromversorgung_Generic&utm_id=43483581&gad_source=1&gbraid=0AAAAAD1-3H5RXiWIoMa0wxSd_K8oRlJKH&gclid=CjwKCAiAudG5BhAREiwAWMlSjDPmVMJK24BTLvHd9yjfUtIwc8q5r0EybappmSUyCZYAYHu7tNM5choC1wwQAvD_BwE&refresh=true)
 
 
 # Board V2.0
