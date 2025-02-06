@@ -10,7 +10,7 @@
 // #define TRIGGER_MODE_ALTERNATING
 
 #define LED_LATENCY_US    1000   
-#define CAM_LATENCY_US    1000       
+#define CAM_EXPOSURE_US   15000       
 
 // Needs to be compile-time constant.
 // void accurateDelayMicroseconds(float us)
@@ -43,7 +43,7 @@ void triggerSimultaneous()
   analogWrite(PIN_CAM_B, 255);
 
   // wait 1 ms for the cams before switching off
-  accurateDelayMicroseconds(CAM_LATENCY_US);
+  accurateDelayMicroseconds(CAM_EXPOSURE_US);
   
   // set cam trigger off
   analogWrite(PIN_CAM_A, 0);
@@ -58,7 +58,7 @@ void loop()
 {  
 
   //number of ms defined by the framerate minus the combined waiting times after LED and cam trigger, respectively (in ms)
-  const float WAIT_UNTIL_NEXT_FRAME_US = 1000000.0 / TARGET_FPS - (LED_LATENCY_US + CAM_LATENCY_US);
+  const float WAIT_UNTIL_NEXT_FRAME_US = 1000000.0 / TARGET_FPS - (LED_LATENCY_US + CAM_EXPOSURE_US);
 
   // debug LED on 
   digitalWrite(13, HIGH);
