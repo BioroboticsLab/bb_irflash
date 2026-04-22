@@ -61,7 +61,7 @@ The following Surface-Mount Device (SMD) parts are required for the boards:
 - 8x [2mF Capacitor '667-EEU-FP1E202B'](https://www.mouser.de/ProductDetail/667-EEU-FP1E202B)
 
 ### MOSFET
-- 1x [RFD14N05L 'RFD14N05L'](https://www.mouser.de/ProductDetail/512-RFD14N05L)
+- 1x [STD12NF06L-1 'STD12NF06L-1'](https://www.mouser.de/ProductDetail/511-STD12NF06L-1)
 
 ### Connectors
 - 8x [Header - Board to LED connections](https://www.mouser.de/ProductDetail/538-43045-0400)
